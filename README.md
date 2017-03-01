@@ -92,7 +92,7 @@ We gaan een website hosten vanuit een docker container.
 
 eerst gaan we het volgend commando uitvoeren
 
-`docker run -p 8000:80 -d -v /tmp/websites:/website_files kitematic/hello-world-nginx`
+`docker run -p 8000:80 -d --name nginx -v /tmp/websites:/website_files kitematic/hello-world-nginx`
 
 Wanneer je nu in je eigen web browser kijkt op het adres `http://ip_van_het_kaartje:8000/`
 dan zie je een webpagina met wat tekst. Dit draait nu in de container die we net gestart hebben.
@@ -104,7 +104,9 @@ Probeer er kort iets moois van te maken als is het een tekst wijziging :)
 
 Na dat je het op de zelfde manier hebt opgeslagen als bij de Dockerfile kan je in de webbrowser zien dat de webpagina verandert wanneer je `f5` gebruikt.
 
-stop de container door `docker`
+Stop de container door `docker stop nginx` uit te voeren.
+Je zou hem nog kunnen verwijderen door `docker rm nginx` uit te voeren.
+
 ## Swarm-mode
 
 We hebben nu de basis docker acties uitgevoerd, om te laten zien wat je nog meer met docker kan gaan we orgistratie over meerdere nodes doen.
@@ -116,4 +118,5 @@ De gene die master op z'n briefje heeft staan kunnen het hier onderstaande comma
 `docker service create -p 8000:80 --replicas 3 kitematic/hello-world-nginx`
 
 Wat dit commando doet is een service aanmaken dat 3 replicas gaat starten over alle beschikbare nodes, deze containers gaan starten en maken zich bekend op poort `8000`
-Nu moet het zo zijn 
+
+Nu moet het zo zijn dat op elke machine in jullie groepje een container gestart is, De containers zijn te vinden onder de zelfde url als voorheen.
