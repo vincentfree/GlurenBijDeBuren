@@ -111,7 +111,7 @@ Je zou hem nog kunnen verwijderen door `docker rm nginx` uit te voeren.
 
 We hebben nu de basis docker acties uitgevoerd, om te laten zien wat je nog meer met docker kan gaan we orgistratie over meerdere nodes doen.
 
-Voor deze opdracht moeten we samenwerken. Op de briefjes staat een naam en een nummer, als je nog niet samen zit met de mensen met het zelfde nummer ga dan nu samen zitten.
+Voor deze opdracht moeten we samenwerken. Op de briefjes staat een naam en een nummer, wanneer je nog niet samen zit met de mensen met het zelfde nummer ga dan nu samen zitten.
 
 De gene die master op z'n briefje heeft staan kunnen het hier onderstaande commando uitvoeren. Dit is alleen te doen door mensen met de "master" titel, master nodes kunnen nieuwe services (containers die straks over meerdere nodes gedeployed gaan worden) aanmaken.
 
