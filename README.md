@@ -11,7 +11,7 @@ Er gaan USB sticks rond met zowel putty als de private key, je kan zo ook downlo
 [putty 64-bit](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.68-installer.msi) -
 [putty 32-bit](https://the.earth.li/~sgtatham/putty/latest/w32/putty-0.68-installer.msi)
 
-[private key]()
+[private key](https://raw.githubusercontent.com/vincentfree/GlurenBijDeBuren/master/workshop_user1.ppk)
 
 ### Putty setup
 
