@@ -72,7 +72,7 @@ Binnen vi druk je op de `i` knop om te mogen wijzigen in de file. Vul het volgen
 FROM docker/whalesay
 LABEL version 0.0.1
 CMD cowsay Hallo <naam>
-```
+ ```
 
 Om de wijziging op te slaan vul je het volgende in
 
@@ -104,8 +104,16 @@ Probeer er kort iets moois van te maken als is het een tekst wijziging :)
 
 Na dat je het op de zelfde manier hebt opgeslagen als bij de Dockerfile kan je in de webbrowser zien dat de webpagina verandert wanneer je `f5` gebruikt.
 
+stop de container door `docker`
 ## Swarm-mode
 
+We hebben nu de basis docker acties uitgevoerd, om te laten zien wat je nog meer met docker kan gaan we orgistratie over meerdere nodes doen.
 
+Voor deze opdracht moeten we samenwerken. Op de briefjes staat een naam en een nummer, als je nog niet samen zit met de mensen met het zelfde nummer ga dan nu samen zitten.
+
+De gene die master op z'n briefje heeft staan kunnen het hier onderstaande commando uitvoeren. Dit is alleen te doen door mensen met de "master" titel, master nodes kunnen nieuwe services (containers die straks over meerdere nodes gedeployed gaan worden) aanmaken.
 
 `docker service create -p 8000:80 --replicas 3 kitematic/hello-world-nginx`
+
+Wat dit commando doet is een service aanmaken dat 3 replicas gaat starten over alle beschikbare nodes, deze containers gaan starten en maken zich bekend op poort `8000`
+Nu moet het zo zijn 
