@@ -6,7 +6,7 @@ Om connectie te maken met de docker machine op jouw kaartje volg de volgende act
 
 ### Download putty en private key
 
-Download een van de onderste versies van putty inbdien je het nog niet op je laptop hebt staan. Download ook de private key.
+Download een van de onderste versies van putty indien je het nog niet op je laptop hebt staan. Download ook de private key.
 
 [putty 64-bit](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.68-installer.msi) -
 [putty 32-bit](https://the.earth.li/~sgtatham/putty/latest/w32/putty-0.68-installer.msi)
@@ -27,14 +27,16 @@ Download een van de onderste versies van putty inbdien je het nog niet op je lap
 
 ## Op de docker terminal
 
-Wanneer u ingelogd bent ziet u iets als: `root@ip-182-51-11-251:/#`
+Wanneer u ingelogd bent ziet u iets als: `ubuntu@ip-182-51-11-251:/#`
+
+Vul het volgende in op de commandline `sudo su`
 
 Dit is de command line van de docker machine die we gaan gebruiken.
 Om te kijken of het werkt gebruik het volgende commando: `docker ps`
 
 Wanneer u het volgende ziet weet u dat uw machine goed werkt: `CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES`
 
-ziet u `Cannot connect to the Docker daemon. Is the docker daemon running on this host?` dan kunt u het volgende invullen: `sudo su` gevolgd door `systemctl start docker`
+ziet u `Cannot connect to the Docker daemon. Is the docker daemon running on this host?` dan kunt u het volgende invullen: `systemctl start docker`
 
 Nu zijn we echt klaar om te beginnen!
 
