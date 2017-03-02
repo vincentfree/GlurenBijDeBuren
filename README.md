@@ -2,7 +2,7 @@
 
 ## Docker machines
 
-Om connectie te maken met de docker machine op jou kaartje volg de volgende acties
+Om connectie te maken met de docker machine op jouw kaartje volg de volgende acties
 
 ### Download putty en private key
 
@@ -11,7 +11,7 @@ Er gaan USB sticks rond met zowel putty als de private key, je kan zo ook downlo
 [putty 64-bit](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.68-installer.msi) -
 [putty 32-bit](https://the.earth.li/~sgtatham/putty/latest/w32/putty-0.68-installer.msi)
 
-[private key](https://raw.githubusercontent.com/vincentfree/GlurenBijDeBuren/master/workshop_user1.ppk)
+[private key](https://raw.githubusercontent.com/vincentfree/GlurenBijDeBuren/master/workshop_user1.ppk) `rechter muis knop - > opslaan`
 
 ### Putty setup
 
@@ -45,7 +45,7 @@ We gaan eerst een simpele docker container starten waarin een klein script draai
 Eerst halen we de docker image op van het internet, dit doen we met het commando `docker pull`.
 
 Docker pull gebruik je om public of private images op te halen.
-Dit kan van de standraard docker registry genaamd de docker hub of vanuit een eigen registry die vanuit je eigen machine of zakelijke omgeving gehost kan worden.
+Dit kan van de standaard docker registry genaamd de docker hub of vanuit een eigen registry die vanuit je eigen machine of zakelijke omgeving gehost kan worden.
 
 Voor dit voorbeeld gaan we gebruik maken van een publiekelijke image van docker zelf.
 
