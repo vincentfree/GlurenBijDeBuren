@@ -42,7 +42,7 @@ Nu zijn we echt klaar om te beginnen!
 
 We gaan eerst een simpele docker container starten waarin een klein script draait die ons een tekst terug gaat geven met wat opmaak in de vorm van het docker logo.
 
-eerst halen we de docker image op van het internet, dit doen we met het commando `docker pull`.
+Eerst halen we de docker image op van het internet, dit doen we met het commando `docker pull`.
 
 Docker pull gebruik je om public of private images op te halen.
 Dit kan van de standraard docker registry genaamd de docker hub of vanuit een eigen registry die vanuit je eigen machine of zakelijke omgeving gehost kan worden.
@@ -100,8 +100,16 @@ dan zie je een webpagina met wat tekst. Dit draait nu in de container die we net
 Nu gaan we op de commandline naar de tmp folder `cd /tmp/websites`
 
 Vanuit hier vullen we `vi index.html` in om de html file aan te passen.
-Probeer er kort iets moois van te maken als is het een tekst wijziging :)
-
+Probeer er kort iets moois van te maken. Het volgende tref je aan in de file
+```html
+<div style="color: #35393B; margin-top: 100px; text-align: center; font-family: HelveticaNeue-Light, sans-serif;">
+  <img src="https://cloud.githubusercontent.com/assets/251292/5254757/a08a277c-7981-11e4-9ec0-d49934859400.png">
+  <h2>Voil&agrave;! Your nginx container is running!</h2>
+  <div style="color: #838789;">
+    <p>To edit files, double click the <strong>website_files</strong> folder in Kitematic and edit the <strong>index.html</strong> file.</p>
+  </div>
+</div>
+```
 Na dat je het op de zelfde manier hebt opgeslagen als bij de Dockerfile kan je in de webbrowser zien dat de webpagina verandert wanneer je `f5` gebruikt.
 
 Stop de container door `docker stop nginx` uit te voeren.
