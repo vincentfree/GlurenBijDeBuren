@@ -6,7 +6,7 @@ Om connectie te maken met de docker machine op jouw kaartje volg de volgende act
 
 ### Download putty en private key
 
-Er gaan USB sticks rond met zowel putty als de private key, je kan zo ook downloaden via de volgende link
+Download een van de onderste versies van putty inbdien je het nog niet op je laptop hebt staan. Download ook de private key.
 
 [putty 64-bit](https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.68-installer.msi) -
 [putty 32-bit](https://the.earth.li/~sgtatham/putty/latest/w32/putty-0.68-installer.msi)
